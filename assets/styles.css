@@ -1,0 +1,29 @@
+html, body {
+	height: 100%;
+}
+
+section {
+	border: 1px solid black;
+}
+
+header {
+	background-color: black;
+	color: white;
+	height: 100px;
+}
+
+.video-section {
+	float: left;
+	width: 75%;
+	background-color: yellow;
+	height: 100%;
+
+
+}
+
+.video-links {
+	float: right;
+	width: 20%;
+	background-color: linen;
+	height: 100%;
+}
