@@ -1,29 +1,235 @@
+
+
+
+
 html, body {
 	height: 100%;
+	background-color: #2e2d2b;
+	color: gainsboro;
 }
 
-section {
-	border: 1px solid black;
+i {
+	padding-right: 5px;
+	padding-left: 5px;
 }
+
+
+
+/*
+Clearfix removes floats after use
+
+*/
+
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	clear: both;
+	*zoom: 1;
+}
+
+
+
+
 
 header {
-	background-color: black;
+	background-color: #2e2d2b;
 	color: white;
 	height: 100px;
 }
 
+
+.header-left {
+	padding-top: 15px;
+  float: left;
+  margin: 0 1.5%;
+  width: 20%;
+}
+
+.fa-youtube {
+	color: red;
+
+}
+
+.header-mid {
+	padding-top: 15px;
+	float: left;
+	margin: 0 1.5%;
+	width: 50%;
+}
+
+#sch-box {
+
+	border: 1px darkgray solid;
+	background-color: #2e2d2b;
+	height: 25px;
+	width: 400px;
+	text-decoration: none;
+	color: gainsboro;
+}
+
+
+
+.fa-search {
+	background-color: dimgray;
+	height: 30px;
+	width: 40px;
+}
+
+.header-right {
+	padding-top: 15px;
+	float: left;
+	margin: 0 1.5%;
+	width: 20%;
+}
+
+.header-right-icons {
+	float: right;
+}
+
+.sign-in {
+	background-color: #2e2d2b;
+	color: dodgerblue;
+	height: 30px;
+	width: 75px;
+}
+
 .video-section {
 	float: left;
-	width: 75%;
-	background-color: yellow;
-	height: 100%;
+	margin: 0 2%;
+	width: 70%;
+	background-color: #2e2d2b;
+
 
 
 }
 
+
+
+.iframe-container{
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 95%;
+  height: 95%;
+}
+
+h2 {
+	margin-top: 0;
+}
+
+h3 {
+	margin-bottom: 0;
+}
+
+#video-title {
+	margin-top: 0;
+}
+
+a {
+	pointer-events: auto;
+	color: gainsboro;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.video-info {
+	border-bottom: 1px solid darkgray;
+}
+
+
+
+.channel-name {
+	float: left;	
+
+}
+
+.sub-button {
+	float: right;
+	margin-top: 20px;
+
+	padding-right: 10px;
+
+}
+
+.sub-button button {
+	background-color: red;
+	border:  none;
+	height: 30px;
+	color: gainsboro;
+}
+
+.video-description {
+	padding-left: 40px;
+}
+
+.comments {
+	border-top: 1px darkgray solid;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+
 .video-links {
 	float: right;
-	width: 20%;
-	background-color: linen;
-	height: 100%;
+	margin: 0 1.5%;
+	width: 23%;
+	background-color: #2e2d2b;
+
+	
+}
+
+.up-next {
+	border-bottom: 1px solid darkgray;
+	margin-bottom: 10px;
+}
+.vid-thumb {
+	float: left;
+	padding-right: 5px;
+}
+
+.vid-thumb:hover {
+	border-bottom: 1px lightgray solid;
+}
+
+.video-link {
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+
+.link-title {
+
+	margin-top: 0;
+	margin-right: 5px;
+}
+
+
+.primary-footer {
+	padding-bottom: 44px;
+	padding-top: 44px;
+}
+
+.left-info {
+	float: left;
+}
+
+.right-info {
+	float: right;
 }
